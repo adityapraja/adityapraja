@@ -27,7 +27,7 @@ jobs:
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           USER_NAME: ${{ github.repository_owner }}
-          BIRTHDAY: "2000-01-01"      # <- change to yours (YYYY-MM-DD)
+          BIRTHDAY: "2006-01-13"      # <- change to yours (YYYY-MM-DD)
         run: python update_stats.py
 
       - name: Commit if changed

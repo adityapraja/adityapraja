@@ -16,13 +16,13 @@ text, tspan {white-space: pre;}
 
 <text x="390" y="30" fill="#c9d1d9">
 <tspan x="390" y="30">{{USERNAME}}</tspan> -———————————————————————————————————————————-—-
-<tspan x="390" y="50" class="cc">. </tspan><tspan class="key">OS</tspan>:<tspan class="cc"> ........................ </tspan><tspan class="value">Windows 10, Android 14, Linux</tspan>
+<tspan x="390" y="50" class="cc">. </tspan><tspan class="key">OS</tspan>:<tspan class="cc"> ........................ </tspan><tspan class="value">Fedora KDE Linux</tspan>
 <tspan x="390" y="70" class="cc">. </tspan><tspan class="key">Uptime</tspan>:<tspan class="cc">{{uptime_dots}}</tspan><tspan class="value">{{uptime}}</tspan>
-<tspan x="390" y="90" class="cc">. </tspan><tspan class="key">Host</tspan>:<tspan class="cc"> ............................. </tspan><tspan class="value">Your Company</tspan>
+<tspan x="390" y="90" class="cc">. </tspan><tspan class="key">Host</tspan>:<tspan class="cc"> ............................. </tspan><tspan class="value">adityapraja</tspan>
 <tspan x="390" y="110" class="cc">. </tspan><tspan class="key">Languages</tspan>.<tspan class="key">Programming</tspan>:<tspan class="cc"> ..... </tspan><tspan class="value">Java, Python, JavaScript</tspan>
 
 <tspan x="390" y="170">- Contact</tspan> -——————————————————————————————————————————————-—-
-<tspan x="390" y="190" class="cc">. </tspan><tspan class="key">Email</tspan>:<tspan class="cc"> ........................... </tspan><tspan class="value">you@example.com</tspan>
+<tspan x="390" y="190" class="cc">. </tspan><tspan class="key">Email</tspan>:<tspan class="cc"> ........................... </tspan><tspan class="value">adityapraja07@gmail.com</tspan>
 
 <tspan x="390" y="250">- GitHub Stats (live)</tspan> -—————————————————————————————————————-—-
 <tspan x="390" y="270" class="cc">. </tspan><tspan class="key">Repos</tspan>:<tspan class="cc">{{repos_dots}}</tspan><tspan class="value">{{repos}}</tspan>
