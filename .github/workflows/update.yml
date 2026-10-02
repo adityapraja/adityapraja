@@ -1,0 +1,38 @@
+name: Update profile stats
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"     # every 6 hours
+  workflow_dispatch:           # manual "Run workflow" button
+  push:
+    branches: [main]
+    paths: [template.svg, update_stats.py]
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install requests python-dateutil
+
+      - name: Generate stats.svg
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          USER_NAME: ${{ github.repository_owner }}
+          BIRTHDAY: "2000-01-01"      # <- change to yours (YYYY-MM-DD)
+        run: python update_stats.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add stats.svg
+          git diff --cached --quiet || git commit -m "Update stats" && git push
